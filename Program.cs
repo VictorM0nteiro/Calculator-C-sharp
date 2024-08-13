@@ -6,6 +6,12 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Soma();
+
+        }
+
+        static void Soma(){
+
             Console.Clear();// Limpar o terminal e possibilitar a o comando "Clear"
 
             // string v1 = Console.ReadLine(); // Fazendo a leitura dos valores digitados 
@@ -18,11 +24,10 @@ namespace Calculator
 
             Console.WriteLine("");
             double resultado = priValor + secValor;
-            Console.WriteLine("O resultado da soma é: " + resultado); // concatenação na impressão utilizar "+"
+            //Console.WriteLine("O resultado da soma é: " + resultado); // concatenação na impressão utilizar "+"
             Console.WriteLine($"O resultado da soma é: {resultado}"); // outro método, interpolação de strings
-            Console.WriteLine($"O resultado da soma é: {priValor + secValor}");
-            Console.WriteLine("O resultado da soma é: " + (priValor + secValor));
-
+            // Console.WriteLine($"O resultado da soma é: {priValor + secValor}");
+            // Console.WriteLine("O resultado da soma é: " + (priValor + secValor));
         }
     }
 }
