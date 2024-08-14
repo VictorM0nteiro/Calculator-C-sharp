@@ -6,8 +6,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Subtracao();
-
+            Multiplicacao();
         }
 
         static void Soma(){
@@ -45,11 +44,44 @@ namespace Calculator
 
             double resultado = priValor - secValor;
 
-            Console.WriteLine($"O resultado da subtração é: {resultado}");
+            Console.WriteLine($"O resultado da subtraçao é: {resultado}");
             Console.ReadKey(); // pausa a execução do programa até que o usuário pressione uma tecla, espera a interação para tomar a próxima ação.
             // nessa caso serve só para o programa não encerrar automaticamente sozinho
         }
-    
+
+        static void Divisao(){
+            Console.Clear();
+
+            Console.WriteLine("Primeiro valor:");
+            double priValor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Segundo valor:");
+            double secValor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            double resultado = priValor / secValor;
+
+            Console.Write($"O resultado da divisao é: {resultado}");
+            Console.ReadKey();
+        }
+
+        static void Multiplicacao(){
+            Console.Clear();
+
+            Console.WriteLine("Primeiro valor:");
+            double priValor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Segundo valor:");
+            double secValor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            double resultado = priValor * secValor;
+
+            Console.WriteLine($"O resultado da multiplicaçao é: {resultado}");
+            Console.ReadKey();
+        }
     
     
     }
